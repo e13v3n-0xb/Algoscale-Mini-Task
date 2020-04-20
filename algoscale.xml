@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.1
+- https://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Apr 20, 2020 at 05:05 PM
+- Server version: 10.4.11-MariaDB
+- PHP Version: 7.2.28
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="algoscale" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="admin">
+                CREATE TABLE `admin` (
+                  `id` varchar(255) NOT NULL,
+                  `name` varchar(255) NOT NULL,
+                  `pass` varchar(255) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'algoscale'
+    -->
+    <database name="algoscale">
+        <!-- Table admin -->
+        <table name="admin">
+            <column name="id">admin</column>
+            <column name="name">Administrator</column>
+            <column name="pass">admin</column>
+        </table>
+    </database>
+</pma_xml_export>
